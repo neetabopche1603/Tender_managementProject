@@ -1,13 +1,13 @@
 @extends('auth.app')
-@section('title','Login')
+@section('title','User Login')
 @section('authContent')
 <div class="background">
     <div class="shape"></div>
     <div class="shape"></div>
 </div>
-<form action="{{route('login.post')}}" method="POST">
+<form action="{{route('user.login.post')}}" method="POST">
     @csrf
-    <h3>Login Here</h3>
+    <h3>User Login</h3>
   <!-- Notification -->
   <div class="row mt-2">
                                 <div class="col-md-12">

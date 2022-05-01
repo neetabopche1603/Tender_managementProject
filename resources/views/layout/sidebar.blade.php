@@ -1,28 +1,37 @@
 <div class="sidebar">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">CodingLab</span>
+      <span class="logo_name">Tender Management</span>
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="{{route('admin.dashboard')}}" class="@if (Request::is('dashboard'))
+            active
+          @endif">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
+        @if (session()->get('type') == 'admin')
         <li>
-          <a href="#">
+          <a href="{{route('user.register')}}" class="@if (Request::is('admin/user*'))
+            active
+          @endif">
             <i class='bx bx-box' ></i>
-            <span class="links_name">Product</span>
+            <span class="links_name">Registered User</span>
+          </a>
+        </li>
+        @endif
+       
+        <li>
+          <a href="{{route('tender')}}" class="@if (Request::is('tender*'))
+            active
+          @endif">
+            <i class='bx bx-list-ul'></i>
+            <span class="links_name">Tender</span>
           </a>
         </li>
         <!-- <li>
-          <a href="#">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
-          </a>
-        </li>
-        <li>
           <a href="#">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Analytics</span>
@@ -63,12 +72,12 @@
             <i class='bx bx-cog' ></i>
             <span class="links_name">Setting</span>
           </a>
-        </li>
+        </li>-->
         <li class="log_out">
-          <a href="#">
+          <a href="{{url('logout')}}">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
-        </li> -->
+        </li> 
       </ul>
   </div>

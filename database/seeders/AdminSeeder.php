@@ -17,7 +17,7 @@ class AdminSeeder extends Seeder
     public function run()
     {
         $user = new Admin;
-        $user->name = 'Nita Bopche';
+        $user->name = 'Admin';
         $user->email  = 'admin@gmail.com';
         $user->password = Hash::make('12345678');
         $user->save();
