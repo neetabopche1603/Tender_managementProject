@@ -8,5 +8,5 @@
 8. open terminal and type php artisan db:seed --class=AdminSeeder
 9. Then run the project.
 
-Admin Panel Login Details URL : http://127.0.0.1:8000 (username : admin@gmail.com password : 12345678)
-User Panel Login Details URL : http://127.0.0.1:8000/user (Admin Registered Users)
+10. Admin Panel Login Details URL : http://127.0.0.1:8000 (username : admin@gmail.com password : 12345678)
+11. User Panel Login Details URL : http://127.0.0.1:8000/user (Admin Registered Users)
