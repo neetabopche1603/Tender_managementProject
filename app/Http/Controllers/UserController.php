@@ -45,7 +45,7 @@ class UserController extends Controller
         );
 
         if ($validator->fails()) {
-            return redirect('admin/user-register')
+            return redirect('admin/user/user-register')
                 ->withErrors($validator)
                 ->withInput();
         }

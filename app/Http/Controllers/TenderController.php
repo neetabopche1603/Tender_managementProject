@@ -35,7 +35,7 @@ class TenderController extends Controller
                 'tender_status' => 'required',
                 'quoted_value' => 'required',
                 'work_details' => 'required',
-                'remark' => 'required|max:6',
+                'remark' => 'required',
             ],
             [
                 'tender_no.required' => 'Please Type Valid tender_no',
